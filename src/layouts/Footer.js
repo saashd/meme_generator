@@ -8,7 +8,7 @@ const Footer = () => {
     return <footer >
         <IconButton style={{color: "white"}}
                     onClick={() => window.open('https://www.linkedin.com/in/alex-druzina', '_blank')}>
-            <LinkedInIcon style={{color: "whnpm install @mui/material @emotion/react @emotion/stylednpm install @mui/material @emotion/react @emotion/styledite"}}/>
+            <LinkedInIcon style={{color: "white"}}/>
         </IconButton>
         <IconButton style={{color: "white"}}
                     onClick={() => window.open('https://github.com/saashd', '_blank')}>
