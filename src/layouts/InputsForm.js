@@ -8,9 +8,10 @@ function InputsForm({numOfFields, changeForm}) {
         <div>
             {fieldsArr.map(field => (
                 <TextField
+                    color="secondary"
                     style={{padding: "2%"}}
                     key={field}
-                    id={"text-input-" + field}
+                    id={"text-" + field}
                     label={"Enter text #" + field}
                     variant="outlined"
                     fullWidth

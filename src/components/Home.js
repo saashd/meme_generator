@@ -42,6 +42,7 @@ function Home() {
     } else {
         return (
             <div className="content">
+                <div>
                 <Pagination
                     nPages={nPages}
                     currentPage={currentPage}
@@ -76,6 +77,7 @@ function Home() {
                     currentPage={currentPage}
                     setCurrentPage={setCurrentPage}
                 />
+                </div>
             </div>
         );
     }

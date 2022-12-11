@@ -41,6 +41,7 @@
     "@mui/icons-material": "^5.10.16",
     "@mui/material": "^5.10.17",
     "axios": "^1.2.1",
+    "file-saver": "^2.0.5",
     "react-router-dom": "^6.4.5"
   }
 }

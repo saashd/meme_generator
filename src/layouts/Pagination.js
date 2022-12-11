@@ -27,7 +27,10 @@ function Pagination({nPages, currentPage, setCurrentPage}) {
             <StyledButton
                 onClick={prevPage}>Previous</StyledButton>
             {pageNumbers.map(pageNum => (
-                <StyledButton onClick={() => setCurrentPage(pageNum)} key={pageNum}>
+                <StyledButton
+                    style={{background: currentPage === pageNum ? "rgba(85,19,66,0.18)" : ""}}
+                    onClick={() => setCurrentPage(pageNum)}
+                    key={pageNum}>
                     {pageNum}
                 </StyledButton>
             ))}

@@ -12,9 +12,6 @@ const getMemes = async () => {
 
 const createMeme = async (data) => {
     try {
-        for (var pair of data.entries()) {
-            console.log(pair[0] + ', ' + pair[1]);
-        }
         return await axios.post("https://api.imgflip.com/caption_image", data, {
             headers: {
                 'Content-Type': 'multipart/form-data'
