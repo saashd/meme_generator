@@ -1,0 +1,51 @@
+footer, header {
+    height:5vh;
+    position: fixed;
+    background-color: rgba(85, 19, 66, 0.45);
+    left: 0;
+    right: 0;
+    padding: 8px;
+    text-align: center;
+
+}
+
+footer {
+    bottom: 0;
+}
+
+header {
+    top: 0;
+}
+
+
+#footer #header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    color: white;
+    position: fixed;
+    -webkit-transform: translate(95vw, 90vh);
+    -moz-transform: translate(95vw, 90vh);
+    transform: translate(95vw, 90vh);
+    transform: translate(95vw, 90vh);
+}
+
+
+.content {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 85.5vh;
+    padding: 0 20px;
+    position: fixed;
+    overflow: auto;
+    margin-top: 6.2vh;
+    text-align-last:center;
+
+}
+
+.content > div {
+    padding: 15px 0;
+}
+
+
+
