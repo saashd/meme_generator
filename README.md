@@ -1,4 +1,4 @@
-# Meme Generetor Web App
+# Meme Generator Web App
 
 
 
