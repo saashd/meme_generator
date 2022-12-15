@@ -22,6 +22,8 @@ Check out live: [Meme Generator](https://stellular-jelly-eaf7b4.netlify.app/)
 ## Badges
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7d442050-185b-426e-920e-3994faa895e8/deploy-status)](https://app.netlify.com/sites/stellular-jelly-eaf7b4/deploys)
+[![HitCount](http://hits.dwyl.com/saashd/meme_generator.svg)](http://hits.dwyl.com/saashd/meme_generator)
+
 ## Screenshots
 
 ![image](https://user-images.githubusercontent.com/52024657/206896350-98c358d9-b510-4b91-84fe-b4434ef3fd5c.png)
