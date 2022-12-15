@@ -26,6 +26,7 @@ function MemePage() {
     const [generatedMeme, setGeneratedMeme] = useState("");
     const [font, setFont] = useState("impact");
     const [open, setOpen] = useState(false);
+    const [textBoxes, setTextBoxes] = useState({});
     const handleClose = () => {
         setOpen(!open);
     };
@@ -37,18 +38,21 @@ function MemePage() {
 
 
     const changeForm = (key) => (event) => {
-        if (formData.has(key)) {
-            formData.set(key, event.target.value);
-        } else {
-            formData.append(key, event.target.value);
-        }
         if (key === "font") {
             setFont(event.target.value);
+        } else {
+            setTextBoxes({
+                ...textBoxes, [key]: event.target.value,
+            });
         }
     };
 
     const generateMeme = () => {
         formData.set("font", font);
+        for (const key in textBoxes) {
+            console.log(key, textBoxes[key]);
+            formData.append(key, textBoxes[key]);
+        }
         createMeme(formData).then(r => {
                 if (r.success === true) {
                     setGeneratedMeme(r.data.url);
