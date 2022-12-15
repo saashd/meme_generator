@@ -13,7 +13,7 @@ function DownloadMeme({handleClose, url, open}) {
 
         <Dialog onClose={handleClose} open={open}>
             <DialogTitle align="center">Generated Meme</DialogTitle>
-            <img src={url} height={350}/>
+            <img src={url} height={350} alt=""/>
             <DialogActions style={{alignSelf:"center"}} >
                 <Button variant="outlined" color="secondary" onClick={saveManual}>Download Meme</Button>
             </DialogActions>
