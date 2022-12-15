@@ -31,8 +31,10 @@ function MemePage() {
     };
     let formData = new FormData();
     formData.append("template_id", meme.id);
-    formData.append("username", "YOUR_USER_NAME");
-    formData.append("password", "YOUR_PASSWORD");
+    formData.append("username", process.env.REACT_APP_USER);
+    formData.append("password", process.env.REACT_APP_PASSWORD);
+    formData.append("font", "impact");
+
 
     const changeForm = (key) => (event) => {
         if (formData.has(key)) {
@@ -41,16 +43,16 @@ function MemePage() {
             formData.append(key, event.target.value);
         }
         if (key === "font") {
-            setFont(event.target.value)
+            setFont(event.target.value);
         }
     };
 
     const generateMeme = () => {
+        formData.set("font", font);
         createMeme(formData).then(r => {
                 if (r.success === true) {
                     setGeneratedMeme(r.data.url);
                     setOpen(true);
-
 
                 } else {
                     console.log(r.error_message)
@@ -84,7 +86,7 @@ function MemePage() {
                         label="Select Font"
                         type="text"
                         value={font}
-                        onInput={changeForm('font')}
+                        onChange={changeForm("font")}
                     >
                         {fonts.map((option) => (
                             <MenuItem key={option.value} value={option.value}>
